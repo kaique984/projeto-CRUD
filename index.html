@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto CRUD</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Assets\css\style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-5 mb-4">Adicionar Usuarios:</h1>
+    
+    <form id="crud-form" class="mb-4">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" id="name" class="form-control" placeholder="Nome" required>
+        </div>
+        <div class="col">
+          <input type="email" id="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-primary">Adicionar</button>
+        </div>
+      </div>
+    </form>
+
+    <ul id="user-list" class="list-group">
+      
+    </ul>
+  </div>
+
+  <script src="Assets\js\script.js"></script>
+</body>
+</html>
