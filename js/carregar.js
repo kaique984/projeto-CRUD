@@ -12,7 +12,7 @@ function card(tarefa){
                 <p>${tarefa.descricao}</p>
                 <a href="#" class="nes-badge is-icon">
                     <span class="is-warning"><i class="nes-icon coin is-small"></i></span>
-                    <span class="is-success">${tarefa.status}</span>
+                    <span class="is-success">${tarefa.pontos}</span>
                 </a> 
                 <progress class="nes-progress is-primary" value="80" max="100"></progress>
 
