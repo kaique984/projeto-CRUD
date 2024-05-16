@@ -1,34 +1,43 @@
-body {
-    padding: 2rem;
+body{
+    padding: 1.5rem;
 }
 
-#lista-de-tarefas {
-    /*mobile first*/
+#listaDeTarefas{
+    /* Mobile First */
+    /* nested class */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 1.2rem;
 
-    /* nesting css */
-    /*
-    @media (min-width: 500px){
-        grid-template-columns: repeat(2, 1fr);
+    /* @media (min-width: 768px){
+        grid-template-columns: 1fr 1fr;
     }
 
-    @media (min-width: 768px){
-        grid-template-columns: repeat(3, 1fr);
-    }
-    */
+    @media (min-width: 1024px){
+        grid-template-columns: 1fr 1fr 1fr;
+    } */
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+form{
     max-width: 600px;
-    margin: 2rem auto;
+    margin: 1.78rem auto;
+
+    .botoes{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
-.acoes {
-    display: flex;
-    justify-content: space-around;
+.apagando {
+    animation: fadeout 1s;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
 }
